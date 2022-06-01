@@ -86,3 +86,86 @@ fn main() {
 ```
 
 回忆一下借用规则，当拥有某值的不可变引用时，就不能再获取一个可变引用。因为 `clear` 需要清空 `String`，它尝试获取一个可变引用。在调用 `clear` 之后的 `println!` 使用了 `word` 中的引用，所以这个不可变的引用在此时必须仍然有效。Rust 不允许 `clear` 中的可变引用和 `word` 中的不可变引用同时存在，因此编译失败。Rust 不仅使得我们的 API 简单易用，也在编译时就消除了一整类的错误！
+
+### 字符串Slice
+
+```rust
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+
+    &s[..]
+}
+
+fn main() {
+    let my_string = String::from("hello world");
+
+    // `first_word` 接受 `String` 的切片，无论是部分还是全部
+    let word = first_word(&my_string[0..6]);
+    let word = first_word(&my_string[..]);
+    // `first_word` 也接受 `String` 的引用，
+    // 这等同于 `String` 的全部切片
+    let word = first_word(&my_string);
+
+    let my_string_literal = "hello world";
+
+    // `first_word` 接受字符串字面量的切片，无论是部分还是全部
+    let word = first_word(&my_string_literal[0..6]);
+    let word = first_word(&my_string_literal[..]);
+
+    // 因为字符串字面值**就是**字符串 slice，
+    // 这样写也可以，即不使用 slice 语法！
+    let word = first_word(my_string_literal);
+}
+```
+
+# 5. 使用结构体组织关联数据
+
+如果你熟悉一门面向对象语言，*struct* 就像对象中的数据属性。
+
+## 5.1 定义并实例化结构体
+
+注意整个实例必须是可变的；Rust 并不允许只将某个字段标记为可变。另外需要注意同其他任何表达式一样，我们可以在函数体的最后一个表达式中构造一个结构体的新实例，来隐式地返回这个实例。
+
+```rust
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+
+fn build_user(email: String, username: String) -> User {
+    User {
+        email: email,
+        username: username,
+        active: true,
+        sign_in_count: 1,
+    }
+}
+
+fn main() {
+    let user1 = build_user(
+        String::from("someone@example.com"),
+        String::from("someusername123"),
+    );
+}
+```
+
+元组结构体：
+
+```rust
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
+
+fn main() {
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
+}
+```
+
