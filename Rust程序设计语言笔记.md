@@ -3,8 +3,10 @@
 
 
 # Rust配置
-
-![image-20220602195416115](/Users/jinjin/code/rust-notes/img-Rust_Programming/image-20220602195416115.png)
+下载Clion。配置相关插件：
+- Rust相关插件：Rust、Ron、Tabnine
+- Git插件：GitBox
+- 翻译插件：Translation
 
 # 4. 认识所有权
 
