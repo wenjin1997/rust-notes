@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover, .dropbtn {
+            background-color: #111;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h3>陈天 Rust编程第一课</h3>
+    <h4>开篇词（1讲）</h4>
+    <div>
+        <a href="course/ch1/01-1.html" target="test">
+            开篇词｜让Rust成为你的下一门主力语言
+        </a>
+    </div>
+    <h4>前置篇（3讲）</h4>
+    <div>
+        <a href="course/ch2/01｜内存：值放堆上还是放栈上，这是一个问题%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">01｜内存：值放堆上还是放栈上，这是一个问题</a>
+    </div>
+    <p></p>
+    <div>
+        <a href="course/ch2/02｜串讲：编程开发中，那些你需要掌握的基本概念%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">02｜串讲：编程开发中，那些你需要掌握的基本概念</a>
+    </div>
+
+
+    <p></p>
+    <div>
+        <a href="course/ch2/加餐｜Rust真的值得我们花时间学习么？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">加餐｜Rust真的值得我们花时间学习么？</a>
+    </div>
+
+    <h4>基础篇（21讲）</h4>
+    <p></p>
+    <div>
+        <a href="course/ch3/03｜初窥门径：从你的第一个Rust程序开始！%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">03｜初窥门径：从你的第一个Rust程序开始！</a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/04丨gethandsdirty：来写个实用的CLI小工具%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">04丨gethandsdirty：来写个实用的CLI小工具</a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/05丨gethandsdirty：做一个图片服务器有多难？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            05丨gethandsdirty：做一个图片服务器有多难？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/06丨gethandsdirty：SQL查询工具怎么一鱼多吃？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            06丨gethandsdirty：SQL查询工具怎么一鱼多吃？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/07丨所有权：值的生杀大权到底在谁手上？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            07丨所有权：值的生杀大权到底在谁手上？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/08丨所有权：值的借用是如何工作的？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            08丨所有权：值的借用是如何工作的？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/09丨所有权：一个值可以有多个所有者么？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            09丨所有权：一个值可以有多个所有者么？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/10丨生命周期：你创建的值究竟能活多久？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            10丨生命周期：你创建的值究竟能活多久？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/11丨内存管理：从创建到消亡，值都经历了什么？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            11丨内存管理：从创建到消亡，值都经历了什么？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/加餐丨愚昧之巅：你的Rust学习常见问题汇总%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            加餐丨愚昧之巅：你的Rust学习常见问题汇总
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/12丨类型系统：Rust的类型系统有什么特点？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            12丨类型系统：Rust的类型系统有什么特点？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/13｜类型系统：如何使用trait来定义接口？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            13｜类型系统：如何使用trait来定义接口？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/14｜类型系统：有哪些必须掌握的Trait？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            14｜类型系统：有哪些必须掌握的Trait？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/15丨数据结构：这些浓眉大眼的结构竟然都是智能指针？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            15丨数据结构：这些浓眉大眼的结构竟然都是智能指针？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/16｜数据结构：Vec_T_、&%5BT%5D、Box_%5BT%5D_%20，你真的了解集合容器么？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            16｜数据结构：Vec T、&[T]、Box<[T]>，你真的了解集合容器么？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/17丨数据结构：软件系统核心部件哈希表，内存如何布局？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            17丨数据结构：软件系统核心部件哈希表，内存如何布局？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/18丨错误处理：为什么Rust的错误处理与众不同？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            18丨错误处理：为什么Rust的错误处理与众不同？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/19丨闭包：FnOnce、FnMut%20和%20Fn，为什么有这么多类型？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            19丨闭包：FnOnce、FnMut%20和%20Fn，为什么有这么多类型？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/20丨4Steps：如何更好地阅读Rust源码？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            20丨4Steps：如何更好地阅读Rust源码？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/21丨阶段实操：构建一个简单的KVserver(1)-基本流程（上）%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            ch3/21丨阶段实操：构建一个简单的KVserver(1)-基本流程（上）
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch3/22丨阶段实操：构建一个简单的KVserver(1)-基本流程（下）%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            22丨阶段实操：构建一个简单的KVserver(1)-基本流程（下）
+        </a>
+    </div>
+
+
+
+    <h4>期中周（2讲）</h4>
+    <p></p>
+    <div>
+        <a href="course/ch4/加餐丨期中测试：参考实现讲解%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            加餐丨期中测试：参考实现讲解
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch4/加餐丨期中测试：来写一个简单的grep命令行%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            加餐丨期中测试：来写一个简单的grep命令行
+        </a>
+    </div>
+
+    <h4>进阶篇（11讲）</h4>
+    <p></p>
+    <div>
+        <a href="course/ch5/23｜类型系统：如何在实战中使用泛型编程？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            23｜类型系统：如何在实战中使用泛型编程？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/24｜类型系统：如何在实战中使用TraitObject？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            24｜类型系统：如何在实战中使用TraitObject？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/25｜类型系统：如何围绕Trait来设计和架构系统？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            25｜类型系统：如何围绕Trait来设计和架构系统？
+        </a>
+    </div>
+
+
+    <p></p>
+    <div>
+        <a href="course/ch5/加餐｜Rust2021版次问世了！%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            加餐｜Rust2021版次问世了！
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/26丨阶段实操：构建一个简单的KVserver(2)-高级trait技巧%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            26丨阶段实操：构建一个简单的KVserver(2)-高级trait技巧
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/27丨生态系统：有哪些常有的Rust库可以为我所用？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            27丨生态系统：有哪些常有的Rust库可以为我所用？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/28丨网络开发：如何使用Rust处理网络请求？（上）%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            28丨网络开发：如何使用Rust处理网络请求？（上）
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/29丨网络开发：如何使用Rust处理网络请求？（下）%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            29丨网络开发：如何使用Rust处理网络请求？（下）
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/30丨UnsafeRust：如何用C++的方式打开Rust？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            30丨UnsafeRust：如何用C++的方式打开Rust？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/31丨FFI：Rust如何和你的语言架起沟通桥梁？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            31丨FFI：Rust如何和你的语言架起沟通桥梁？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch5/32丨实操项目：使用PyO3开发Python3模块%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            32丨实操项目：使用PyO3开发Python3模块
+        </a>
+    </div>
+
+
+    <h4>并发篇（11讲）</h4>
+    <p></p>
+    <div>
+        <a href="course/ch6/33丨并发处理：从atomics到Channel，Rust都提供了什么工具？（上）%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            33丨并发处理：从atomics到Channel，Rust都提供了什么工具？（上）
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/34丨并发处理：从atomics到Channel，Rust都提供了什么工具？（下）%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            34丨并发处理：从atomics到Channel，Rust都提供了什么工具？（下）
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/35丨实操项目：如何实现一个基本的MPSCchannel？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            35丨实操项目：如何实现一个基本的MPSCchannel？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/用户故事丨绝望之谷：改变从学习开始%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            用户故事丨绝望之谷：改变从学习开始
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/36丨阶段实操（3）：构建一个简单的KVserver-网络处理%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            36丨阶段实操（3）：构建一个简单的KVserver-网络处理
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/37丨阶段实操（4）：构建一个简单的KVserver-网络安全%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            37丨阶段实操（4）：构建一个简单的KVserver-网络安全
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/37丨阶段实操（4）：构建一个简单的KVserver-网络安全%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            37丨阶段实操（4）：构建一个简单的KVserver-网络安全
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/38丨异步处理：Future是什么？它和async-await是什么关系？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            38丨异步处理：Future是什么？它和async-await是什么关系？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/39丨异步处理：async-await内部是怎么实现的？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            39丨异步处理：async-await内部是怎么实现的？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/40丨异步处理：如何处理异步IO？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            40丨异步处理：如何处理异步IO？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/41丨阶段实操（5）：构建一个简单的KVserver-异步处理%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            41丨阶段实操（5）：构建一个简单的KVserver-异步处理
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch6/42丨阶段实操（6）：构建一个简单的KVserver-如何做大的重构？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            42丨阶段实操（6）：构建一个简单的KVserver-如何做大的重构？
+        </a>
+    </div>
+
+    <h4>实战篇（7讲）</h4>
+    <p></p>
+    <div>
+        <a href="course/ch7/43丨生产环境：真实世界下的一个Rust项目包含哪些要素？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            43丨生产环境：真实世界下的一个Rust项目包含哪些要素？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch7/44丨数据处理：应用程序和数据如何打交道？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            44丨数据处理：应用程序和数据如何打交道？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch7/45丨阶段实操（8）：构建一个简单的KVserver-配置测试监控CICD%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            45丨阶段实操（8）：构建一个简单的KVserver-配置测试监控
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch7/46丨软件架构：如何用Rust架构复杂系统？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            46丨软件架构：如何用Rust架构复杂系统？
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch7/大咖助场丨开悟之坡（上）：Rust的现状、机遇与挑战%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            大咖助场丨开悟之坡（上）：Rust的现状、机遇与挑战
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch7/大咖助场丨开悟之坡（下）：Rust的现状、机遇与挑战%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            大咖助场丨开悟之坡（下）：Rust的现状、机遇与挑战
+        </a>
+    </div>
+
+    <p></p>
+    <div>
+        <a href="course/ch7/用户故事丨语言不仅是工具，还是思维方式%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            用户故事丨语言不仅是工具，还是思维方式
+        </a>
+    </div>
+
+    <h4>结束语（1讲）</h4>
+    <p></p>
+    <div>
+        <a href="course/ch8/结束语丨永续之原：Rust学习，如何持续精进？%5B天下无鱼%5D%5Bshikey.com%5D.html" target="test">
+            结束语丨永续之原：Rust学习，如何持续精进？
+        </a>
+    </div>
+
+</body>
+</html>
