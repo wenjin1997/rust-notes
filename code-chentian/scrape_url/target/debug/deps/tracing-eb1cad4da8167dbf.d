@@ -1,0 +1,13 @@
+/Users/jinjin/code/rust-notes/code-chentian/scrape_url/target/debug/deps/tracing-eb1cad4da8167dbf.rmeta: /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/lib.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/macros.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/dispatcher.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/field.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/instrument.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/level_filters.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/span.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/stdlib.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/subscriber.rs
+
+/Users/jinjin/code/rust-notes/code-chentian/scrape_url/target/debug/deps/tracing-eb1cad4da8167dbf.d: /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/lib.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/macros.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/dispatcher.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/field.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/instrument.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/level_filters.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/span.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/stdlib.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/subscriber.rs
+
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/lib.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/macros.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/dispatcher.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/field.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/instrument.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/level_filters.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/span.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/stdlib.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.35/src/subscriber.rs:

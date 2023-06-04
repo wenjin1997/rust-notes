@@ -5,3 +5,6 @@ mod hashmap2;
 mod hashmap3;
 mod hashmap4;
 mod hashmap5;
+mod derive_proc_macros;
+mod lib;
+mod proc_macros;

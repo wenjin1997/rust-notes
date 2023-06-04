@@ -1,0 +1,1 @@
+/Users/jinjin/code/rust-notes/rust_code/guessing_game/target/package/guessing_game_wenjin-0.1.0/target/debug/guessing_game_wenjin: /Users/jinjin/code/rust-notes/rust_code/guessing_game/target/package/guessing_game_wenjin-0.1.0/src/main.rs

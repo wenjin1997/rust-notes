@@ -1,0 +1,11 @@
+/Users/jinjin/code/rust-notes/code-chentian/httpie/target/debug/deps/futures_channel-64ec506e70009047.rmeta: /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/lib.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/lock.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/mpsc/mod.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/mpsc/queue.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/oneshot.rs
+
+/Users/jinjin/code/rust-notes/code-chentian/httpie/target/debug/deps/libfutures_channel-64ec506e70009047.rlib: /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/lib.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/lock.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/mpsc/mod.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/mpsc/queue.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/oneshot.rs
+
+/Users/jinjin/code/rust-notes/code-chentian/httpie/target/debug/deps/futures_channel-64ec506e70009047.d: /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/lib.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/lock.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/mpsc/mod.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/mpsc/queue.rs /Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/oneshot.rs
+
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/lib.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/lock.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/mpsc/mod.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/mpsc/queue.rs:
+/Users/jinjin/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.23/src/oneshot.rs:

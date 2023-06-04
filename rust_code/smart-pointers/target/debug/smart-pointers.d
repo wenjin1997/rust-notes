@@ -1,0 +1,1 @@
+/Users/jinjin/code/rust-notes/rust_code/smart-pointers/target/debug/smart-pointers: /Users/jinjin/code/rust-notes/rust_code/smart-pointers/src/lib.rs /Users/jinjin/code/rust-notes/rust_code/smart-pointers/src/main.rs

@@ -1,0 +1,1 @@
+/Users/jinjin/code/rust-notes/rust_code/macro-project/target/debug/pancakes: /Users/jinjin/code/rust-notes/rust_code/macro-project/hello_macro/hello_macro_derive/src/lib.rs /Users/jinjin/code/rust-notes/rust_code/macro-project/hello_macro/src/lib.rs /Users/jinjin/code/rust-notes/rust_code/macro-project/pancakes/src/main.rs
